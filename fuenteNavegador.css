@@ -26,31 +26,3 @@
 
 
 
-
-
-.card {
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-img-top {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }
-  
-  .card-title {
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 0.9rem;
-  }
-  
-  .badge {
-    font-size: 0.8rem;
-  }
-  
-  .btn-primary {
-    font-size: 0.9rem;
-  }
-  
