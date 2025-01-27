@@ -1,0 +1,77 @@
+nav,
+.offcanvas {
+    background-color: #ffffff;
+
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Cambiar el color de los enlaces */
+.nav-link {
+    color: #000000;
+    /* Color por defecto */
+}
+
+.custom-button {
+    background-color: white; /* Color personalizado */
+    color: #f76c6f; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 7px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.custom-button {
+    background-color: white; /* Color personalizado */
+    color: #f76c6f; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 7px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+
+.custom-button3 {
+    background-color: #f76c6f; /* Color personalizado */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-button3:active {
+    background-color: #d84749; /* Color al presionar */
+}
+
+
+.custom-button:hover {
+    background-color: #f33b3e; /* Color al pasar el ratón */
+}
+
+
+
+
+.nav-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+@media (max-width: 767.98px) { /* Estilos para pantallas móviles */
+    .border-top-mobile {
+        border-top: 1px solid #d9d9d9; /* Borde superior gris */
+        padding-top: 5px; /* Espaciado adicional para que se vea mejor */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav>li:hover {
+        background-color: #79bae6;
+    }
+}

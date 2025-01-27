@@ -1,0 +1,56 @@
+#borel-regular {
+    font-family: "Montserrat", serif;
+  }
+  
+  .nav-link {
+    position: relative; /* Necesario para el pseudo-elemento */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.nav-link::after {
+    content: ""; /* Crea un pseudo-elemento */
+    display: block;
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Altura del borde */
+    background: transparent; /* Color inicial del borde */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Posiciona el borde en la parte inferior */
+    
+}
+
+.nav-link:hover::after {
+    background: #f33b3e; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+
+
+
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+  }
+  
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+  
