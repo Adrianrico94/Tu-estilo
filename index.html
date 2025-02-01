@@ -18,9 +18,10 @@
     href="https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
-    <!-- fuente logo  --><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <!-- fuente logo  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
 
   <!-- fin  -->
   <!-- icono care monedas -->
@@ -29,9 +30,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- fin -->
 
+  <!-- iconos -->
   <link rel="stylesheet" href="fuenteNavegador.css" />
   <link rel="stylesheet" href="Inicio.css" />
   <link rel="icon" href="recursos/iconoLogo.png" type="image/x-icon" />
+
+  <!-- iconos gogle  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=page_info" />
 </head>
 
 <body>
@@ -55,20 +61,20 @@
       </ul>
 
       <!-- OFFCANVAS MAIN CONTAINER START -->
-      <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1" style="width: 80%;">
+      <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1" style="width: 80%">
         <div class="offcanvas-header" style="margin-bottom: 0%; padding-bottom: 0%; height: 50px">
           <img src="recursos/iconoLogo.png" alt="" width="60px" style="margin: 0; padding: 0" />
-          <h5 id="foon" class="offcanvas-title " style="color: #3b3b3b">
+          <h5 id="foon" class="offcanvas-title" style="color: #3b3b3b">
             Tu estilo
           </h5>
           <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
         </div>
         <!-- OFF CANVAS MENU LINKS  START-->
-        <div class="offcanvas-body d-flex flex-column justify-content-between px-0 " id="borel-regular">
-          <ul class="navbar-nav fs-6 justify-content-evenly  p-sm-3 border-top-mobile" style="font-size: 0.875rem; font-weight: 600px">
-            
-            <li class="nav-item p-1 py-md-1  px-3">
-              <a href="" class="nav-link  ">Inicio</a>
+        <div class="offcanvas-body d-flex flex-column justify-content-between px-0" id="borel-regular">
+          <ul class="navbar-nav fs-6 justify-content-evenly p-sm-3 border-top-mobile"
+            style="font-size: 0.875rem; font-weight: 600px">
+            <li class="nav-item p-1 py-md-1 px-3">
+              <a href="" class="nav-link">Inicio</a>
             </li>
 
             <li class="nav-item p-1 py-md-1 pt-3 px-3">
@@ -103,18 +109,64 @@
       <!-- OFFCANVAS MAIN CONTAINER END  -->
     </div>
   </nav>
-  
+  <!-- Filtro  -->
+  <button type="button" class="btn btn btn-outline-secondary m-2 text-black" data-bs-toggle="modal"
+    data-bs-target="#miModal">
+    <span class="material-symbols-outlined fs-6"> page_info </span> Filtrar
+  </button>
+
+  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="miModalLabel">Filtrar Por servicios</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+            <label class="form-check-label" for="flexCheckChecked">
+              Cortes Mujeres
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label" for="flexCheckDefault">
+              Cortes Hombre
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label" for="flexCheckDefault">
+              Descuentos
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Limpiar
+          </button>
+          <button type="button" class="btn btn-primary">
+            Mostrar resultados
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin filtro  -->
 
   <div class="container">
     <div class="col-12 mb-4">
       <div class="card mt-3 d-flex flex-column flex-md-row">
-        <div id="carouselImages" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+        <div id="carouselImages" class="carousel slide" data-bs-ride="carousel" style="width: 100%">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner" >
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="recursos/CorteHombre/Low Fade.jpg" class="d-block w-100" alt="Imagen 1" height="275px" />
             </div>
@@ -142,7 +194,10 @@
             Low Fade, Drop Fade ,Mullet
           </p>
           <p class="card-text">
-            Se trata de un tipo de corte de pelo degradado, generalmente masculino, donde el cabello está muy recortado en la nuca, patillas y laterales de la cabeza, volviéndose más largo en la parte superior de la misma. ...
+            Se trata de un tipo de corte de pelo degradado, generalmente
+            masculino, donde el cabello está muy recortado en la nuca,
+            patillas y laterales de la cabeza, volviéndose más largo en la
+            parte superior de la misma. ...
           </p>
           <div class="d-flex flex-column flex-md-row justify-content-evenly align-items-center">
             <div class="mb-3 mb-md-0">
@@ -152,17 +207,13 @@
               <span class="badge text-body-emphasis ms-1 py-0 ps-0 mx-0">promoción</span>
               <span class="badge ms-1 py-0 ps-0 mx-0" style="color: #fabb00">-10%</span>
             </div>
-            <button class="border rounded-3 custom-button3">Quiero más información</button>
+            <button class="border rounded-3 custom-button3">
+              Quiero más información
+            </button>
           </div>
-          
         </div>
       </div>
     </div>
-    
-
-
-
-
 
     <div class="my-3">
       <h1 style="font-size: 30px">
