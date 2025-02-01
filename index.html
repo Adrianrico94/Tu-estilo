@@ -77,17 +77,22 @@
               <a href="" class="nav-link">Inicio</a>
             </li>
 
-            <li class="nav-item p-1 py-md-1 pt-3 px-3">
+            <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Promociones</a>
             </li>
-            <li class="nav-item p-1 py-md-1 pt-3 px-3">
+            <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Precios</a>
             </li>
-            <li class="nav-item p-1 py-md-1 pt-3 px-3">
+            <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Productos</a>
             </li>
-            <li class="nav-item p-1 py-md-1 me-auto pt-3 px-3">
+            <li class="nav-item p-1 py-md-1 me-auto  px-3">
               <a href="" class="nav-link">Contacto</a>
+            </li>
+
+            
+            <li class="nav-item p-1 py-md-1 me-auto  px-3">
+              <a href="" class="nav-link">Mi cuienta</a>
             </li>
             <li class="nav-item p-5 py-md-1 d-none d-lg-block">
               <button class="btn btn-primary custom-button">Acceder</button>
@@ -110,53 +115,60 @@
     </div>
   </nav>
   <!-- Filtro  -->
-  <button type="button" class="btn btn btn-outline-secondary m-2 text-black" data-bs-toggle="modal"
-    data-bs-target="#miModal">
-    <span class="material-symbols-outlined fs-6"> page_info </span> Filtrar
-  </button>
+  <div class="container">
+    
+    <button type="button" class="btn btn btn-outline-secondary m-2 text-black" data-bs-toggle="modal"
+      data-bs-target="#miModal">
+      <span class="material-symbols-outlined fs-6"> page_info </span> Filtrar
+    </button>
 
-  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="miModalLabel">Filtrar Por servicios</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-            <label class="form-check-label" for="flexCheckChecked">
-              Cortes Mujeres
-            </label>
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="miModalLabel">
+              Filtrar Por servicios
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Cortes Hombre
-            </label>
-          </div>
+          <div class="modal-body">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Cortes Mujeres
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Cortes Hombre
+              </label>
+            </div>
 
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Descuentos
-            </label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Descuentos
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Limpiar
-          </button>
-          <button type="button" class="btn btn-primary">
-            Mostrar resultados
-          </button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Limpiar
+            </button>
+            <button type="button" class="btn btn-primary">
+              Mostrar resultados
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Fin filtro  -->
 
   <div class="container">
+    
     <div class="col-12 mb-4">
       <div class="card mt-3 d-flex flex-column flex-md-row">
         <div id="carouselImages" class="carousel slide" data-bs-ride="carousel" style="width: 100%">
@@ -216,9 +228,7 @@
     </div>
 
     <div class="my-3">
-      <h1 style="font-size: 30px">
-        "¡Muestra tu mejor versión! La belleza comienza aquí."
-      </h1>
+      
     </div>
 
     <div class="row">
