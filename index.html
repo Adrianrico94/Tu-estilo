@@ -51,30 +51,69 @@
       </button>
       <div>
         <img class="d-none d-lg-block" src="recursos/logo-k0MkBF3AK-transformed.png" alt="" height="80px" />
-        <img class="d-block d-lg-none ps-5" src="recursos/logo-k0MkBF3AK-transformed.png" alt="" height="60px" />
+        <img class="d-block d-lg-none ps-0" src="recursos/logo-k0MkBF3AK-transformed.png" alt="" height="60px" />
 
       </div>
 
       <!-- icono de Inicio de secion -->
-      <ul class="navbar-nav ps-5   no-list-style" style="font-size: 30px">
-        <li class="nav-item p-1 py-md-1 d-lg-none">
+      <ul class="navbar-nav ps-5 px-0 ms-0 mx-0 no-list-style" style="font-size: 27px">
+        <li id="miCuenta" class="nav-item py-md-1 d-lg-none">
           <i class="bi bi-person"></i>
-
+          <p style="font-size: 7px; margin: 0px; padding: 0;">Mi cuenta</p>
         </li>
-        
-
       </ul>
+
+      <style>
+        #miCuenta {
+          color: black;
+          /* Color normal */
+          cursor: pointer;
+          /* Cambia el cursor al pasar por encima */
+        }
+
+        #miCuenta.active {
+          color: red;
+          /* Color al ser presionado */
+        }
+      </style>
+
+      <script>
+        document.getElementById('miCuenta').addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      </script>
+
+
 
       <!-- icono de Inicio de secion -->
-      <ul class="navbar-nav  no-list-style" style="font-size: 26px">
-        
-        <li class="nav-item p-1 py-md-1 d-lg-none">
+      <ul class="navbar-nav  ps-0 px-0 ms-0 mx-0 no-list-style" style="font-size: 23px">
+
+        <li id="Carrito" class="nav-item  py-md-1 ps-0 px-0 d-lg-none">
           <i class="bi bi-cart4 "></i>
+          <p style="font-size: 7px; margin: 0px; padding-top: 6px;">Carrito</p>
 
         </li>
 
       </ul>
+      <style>
+        #Carrito {
+          color: black;
+          /* Color normal */
+          cursor: pointer;
+          /* Cambia el cursor al pasar por encima */
+        }
 
+        #Carrito.active {
+          color: red;
+          /* Color al ser presionado */
+        }
+      </style>
+
+      <script>
+        document.getElementById('Carrito').addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      </script>
 
 
 
@@ -93,6 +132,9 @@
             style="font-size: 0.875rem; font-weight: 600px">
             <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item p-1 py-md-1 me-auto px-3">
+              <a href="" class="nav-link">Servicios</a>
             </li>
             <div class="dropdown p-1 py-md-1">
               <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -115,15 +157,13 @@
             <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Precios</a>
             </li>
-            <li class="nav-item p-1 py-md-1 me-auto px-3">
-              <a href="" class="nav-link">Productos</a>
-            </li>
+
             <li class="nav-item p-1 py-md-1 me-auto px-3">
               <a href="" class="nav-link">Contacto</a>
             </li>
 
             <li class="nav-item p-1 py-md-1 me-auto px-3">
-              <a href="" class="nav-link">Mi cuienta</a>
+              <a href="" class="nav-link">Agendar cita</a>
             </li>
             <li class="nav-item p-5 py-md-1 d-none d-lg-block">
               <button class="btn btn-primary custom-button">Acceder</button>
@@ -200,6 +240,10 @@
   </div>
 
   <!-- Fin filtro  -->
+
+
+
+  <!-- Secion 1 -->
 
   <div class="container">
     <div class="col-12 mb-4">
