@@ -55,61 +55,27 @@
 
       </div>
 
-      <!-- icono de Inicio de secion -->
-      <ul id="miCuenta" class="navbar-nav  no-list-style" style="font-size: 27px; padding-left: 75px;">
-          <i class="bi bi-person"></i>
-          <p style="font-size: 7px; margin: 0px; padding: 0;">Mi cuenta</p>
-      </ul>
-
-      <style>
-        #miCuenta {
-          color: black;
-          /* Color normal */
-          cursor: pointer;
-          /* Cambia el cursor al pasar por encima */
-        }
-
-        #miCuenta.active {
-          color: red;
-          /* Color al ser presionado */
-        }
-      </style>
-
-      <script>
-        document.getElementById('miCuenta').addEventListener('click', function () {
-          this.classList.toggle('active');
-        });
-      </script>
+      <!-- Icono de Inicio de sesión -->
+      <a id="miCuenta" href="Login.html" class="navbar-nav no-list-style d-lg-none"
+        style="font-size: 27px; padding-left: 75px; text-decoration: none; color: inherit;">
+        <i class="bi bi-person"></i>
+        <p style="font-size: 7px; margin: 0px; padding: 0;">Mi cuenta</p>
+      </a>
 
 
 
-      <!-- icono de Inicio de secion -->
-      <ul id="Carrito" class="navbar-nav   no-list-style" style="font-size: 23px; padding-right: 10px;">
 
-          <i class="bi bi-cart4 "></i>
-          <p style="font-size: 7px; margin: 0px; padding-top: 6px;">Carrito</p>
+      <!-- icono de Carrito -->
+
+      <!-- Icono del Carrito -->
+      <a href="Carrito.html" class="navbar-nav no-list-style d-lg-none"
+        style="font-size: 23px; padding-right: 10px; text-decoration: none; color: inherit;">
+        <i class="bi bi-cart4"></i>
+        <p style="font-size: 7px; margin: 0px; padding-top: 6px;">Carrito</p>
+      </a>
 
 
-      </ul>
-      <style>
-        #Carrito {
-          color: black;
-          /* Color normal */
-          cursor: pointer;
-          /* Cambia el cursor al pasar por encima */
-        }
 
-        #Carrito.active {
-          color: red;
-          /* Color al ser presionado */
-        }
-      </style>
-
-      <script>
-        document.getElementById('Carrito').addEventListener('click', function () {
-          this.classList.toggle('active');
-        });
-      </script>
 
 
 
@@ -158,11 +124,8 @@
               <a href="" class="nav-link">Contacto</a>
             </li>
 
-            <li class="nav-item p-1 py-md-1 me-auto px-3">
-              <a href="" class="nav-link">Agendar cita</a>
-            </li>
             <li class="nav-item p-5 py-md-1 d-none d-lg-block">
-              <button class="btn btn-primary custom-button">Acceder</button>
+              <button class="btn btn-dark custom-button">Agendar cita</button>
             </li>
             <!-- Carrito de compras -->
             <li class="nav-item d-none d-lg-block">
