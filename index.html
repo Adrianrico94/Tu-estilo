@@ -207,8 +207,82 @@
             </li>
 
             <li class="nav-item p-5 py-md-1 d-none d-lg-block">
-              <button class="btn  custom-button">Agendar cita</button>
-            </li>
+              <button class="btn custom-button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Agendar cita
+              </button>
+          </li>
+          <!-- Modal -->
+          <style>
+            .modal-content {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .left-box {
+                /* background: linear-gradient(to right, #007bff, #0056b3); */
+                background-image: url(recursos/Login/freepik__upload__38215.png);
+                background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+                color: white;
+                padding: 50px;
+            }
+            .input-group-text {
+                background: white;
+                border-right: 0;
+            }
+            .form-control {
+                border-left: 0;
+            }
+        </style>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="row">
+              <!-- Lado izquierdo -->
+              <div class="col-md-5 left-box d-none d-md-flex flex-column justify-content-center text-center">
+                  <h2 class="fw-bold">Crear una cuenta?</h2>
+                  <p>No tienes cuenta crea una aquí.</p>
+                  <button class="btn btn-light rounded-pill px-4">Registrarme</button>
+              </div>
+
+              <!-- Lado derecho (Login) -->
+              <div class="col-md-7 p-4">
+                  <div class="d-flex justify-content-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <h3 class="text-center fw-bold">Sign in</h3>
+                  <form>
+                      <div class="input-group mt-4">
+                          <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          <input type="text" class="form-control" placeholder="Username">
+                      </div>
+                      <div class="input-group mt-3">
+                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          <input type="password" class="form-control" placeholder="Password">
+                      </div>
+                      <div class="text-center mt-4">
+                          <button class="btn btn-primary w-100 rounded-pill">ACCESO</button>
+                      </div>
+                  </form>
+
+                  <div class="text-center mt-3">
+                      <small>Contacto redes sociales</small>
+                      <div class="d-flex justify-content-center gap-3 mt-2">
+                          <a href="#" class="text-dark"><i class="fab fa-facebook fs-4"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-twitter fs-4"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-google fs-4"></i></a>
+                          <a href="#" class="text-dark"><i class="fa-brands fa-whatsapp fs-3  "></i></a>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>  
+</div>
+
+          
             <!-- Carrito de compras -->
             <li class="nav-item d-none d-lg-block">
               <i class="bi bi-cart4 fs-3"></i>
@@ -228,7 +302,7 @@
     </div>
   </nav>
 
-  <div class="container mt-2">
+  <div class="container mt-3">
     <div class="card border rounded shadow-sm" style="max-width: 100%; ">
       <img src="recursos/baner/freepik__expand__54836.png" class="card-img-top rounded-top" alt="Imagen">
 
